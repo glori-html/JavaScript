@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 6-3-2.html</title>
+</head>
+
+<body>
+    <script>
+        let myStr = "Tang Poem: 年年歲歲花相似，歲歲年年人不同。";
+        document.write("原字串: myStr = " + myStr + "<br>");
+        document.write("轉換成大寫字母: myStr.toUpperCase() = " + myStr.toUpperCase + "<br>");
+        document.write("轉換成小寫字母: myStr.toLowerCase() = " + myStr.toLowerCase() + "<br>");
+        document.write("字串並排: myStr.concat(\"新加的\") = " + myStr.concat("新加的") + "<br>");
+        document.write("抽出字元：myStr.charAt(13) = " + myStr.charAt(13) + "<br>");
+        document.write("抽出子字串：myStr.substr(13, 5) = " + myStr.substr(13, 5) + "<br>");
+        document.write("抽出子字串：myStr.substring(13, 15) = " + myStr.substring(13, 15) + "<br>");
+        document.write("尋找子字串：myStr.indexOf(\"年\") = " + myStr.indexOf("年") + "<br>"); // 如果找不到, 回傳 -1
+        document.write("尋找子字串：myStr.lastIndexOf(\"年\") = " + myStr.lastIndexOf("年") + "<br>");
+        document.write("抽出子字串：myStr.slice(13, 15) = " + myStr.slice(13, 15) + "<br>");
+        document.write("取代字串：myStr.replace('不同','相同') = " + myStr.replace('不同', '相同') + "<br>");
+        document.write("搜尋字串：myStr.search(/歲歲/) = " + myStr.search(/歲歲/) + "<br>");
+        document.write("匹配字串：myStr.match(/歲歲/) = " + myStr.substr(/歲歲/) + "<br>");
+
+        console.log("切割字串：myStr.split(':') = ");
+        console.log(myStr.split(':'));
+
+        console.log("匹配字串：myStr.trim() = " + myStr.trim());
+    </script>
+</body>
+
+</html>

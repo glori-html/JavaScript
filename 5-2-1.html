@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 5-2-1.html</title>
+</head>
+
+<body>
+    <script>
+        let height = 171;
+        let heightRestriction = 140;
+
+        console.log(height > heightRestriction); // 輸出 true
+        console.log(height >= heightRestriction); // 輸出 true
+        console.log(height == heightRestriction); // 輸出 false
+        console.log(height < heightRestriction); // 輸出 false
+        console.log(height <= heightRestriction); // 輸出 false
+        console.log(height != heightRestriction); // 輸出 true
+
+
+        let a = 1;
+        let b = "1";
+
+        // 兩個等於(==)會先強制轉換成相同的型態再進行比對
+        console.log(a == b); // 輸出 true 
+
+        // 三個等於(===)，則需要兩個相同的值跟型態才能進行比對
+        console.log(a === b); // 輸出 false
+        console.log(a === a); // 輸出 true
+
+    </script>
+</body>
+
+</html>
