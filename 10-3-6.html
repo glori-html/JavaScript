@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 10-3-6.html</title>
+</head>
+
+<body>
+    <script>
+        // 刪除陣列第一個元素，使用shift():
+        let listOfName = ['Alex', 'Bill', 'Cook', 'Darren'];
+        listOfName.shift();
+        console.log(listOfName); //輸出 ['Bill', 'Cook', 'Darren']
+
+        listOfName = ['Alex', 'Bill', 'Cook', 'Darren'];
+        let name = listOfName.pop(); //從陣列尾端刪除Darren
+        listOfName.unshift(name); //將刪除的陣列尾端資料放到陣列前端
+        console.log(listOfName); //輸出 [ 'Darren', 'Alex', 'Bill', 'Cook']
+    </script>
+</body>
+
+</html>
