@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 12-2-1.html</title>
+    <script>
+        // 建立匿名函式
+        let say = function () {
+            console.log('Hello World');
+        }
+
+        // 帶有參數的匿名函式
+        let greet = function (name) {
+            console.log('Hello, ' + name);
+        }
+
+        // 有回傳值的匿名函式
+        let getMessage = function (name) {
+            return ('Good Job! ' + name);
+        }
+
+        // 依序執行各個函式
+        say();
+        greet('Alex');
+        console.log(getMessage('Bill')); //輸出 'Good Job! Bill'
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
