@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 15-1-1 時間與計時器</title>
+    <script>
+        // 宣告Date物件
+        let date = new Date();
+
+        // 字串變數，預設空值
+        let strTime = "";
+
+        // 串接時間
+        strTime += date.getFullYear();
+        strTime += date.getMonth() + 1; //月份，6月時執行會出現5，比正常值少1，記得 + 1
+        strTime += date.getDate();
+        strTime += date.getHours();
+        strTime += date.getMinutes();
+        strTime += date.getSeconds();
+
+        // 輸出結果
+        console.log(strTime);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

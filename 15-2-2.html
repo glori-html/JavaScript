@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 15-2-1 setTimeOut 用法</title>
+</head>
+
+<body>
+    <p id="txt">時間開始</p>
+
+    <script>
+        // 每2秒更新一次p元素當中的內文
+
+        // 取得p元素
+
+        var p = document.getElementById('txt');
+
+        // 可以對setTimeout裡面的function block內容進行排版
+        setTimeout(function () {
+            p.innerText = "2秒";
+        }, 2000);
+
+        setTimeout(function () { p.innerText = "4秒" }, 4000);
+        setTimeout(function () { p.innerText = "6秒" }, 6000);
+    </script>
+</body>
+
+</html>
