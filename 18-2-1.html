@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-2-1 滑鼠事件</title>
+    <style>
+        div {
+            text-align: center;
+            line-height: 200px;
+            letter-spacing: .2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" style="width: 200px; height: 100x;">按下後改變文字</button>
+    <br /><br /><br /><br />
+    <div style="width: 300px; height: 200px; border: 1px solid;">請用滑鼠移過此元素</div>
+    <br /><br /><br /><br />
+    <img class="toast" src="./images/bread-6.jpg" />
+
+    <script>
+        //對 button#btn 註冊 click 事件
+        document.getElementById('btn').addEventListener('click', function (event) {
+            //跳出文字訊息
+            alert(this.innerText);
+
+            //修改文字
+            this.innerText = '已改變';
+        });
+
+        //對 div 註冊兩個事件，分別是滑鼠移入和移出
+        let div = document.getElementsByTagName('div')[0];
+        div.addEventListener('mousemove', function (event) {
+            this.style.backgroundColor = 'orange';
+            this.style.color = '#fff';
+            this.style.fontSize = '20px';
+        });
+        div.addEventListener('mouseout', function (event) {
+            this.style.backgroundColor = 'navy';
+            this.style.color = 'yellow';
+            this.style.fontSize = '25px';
+        });
+
+        //對 img.puppy 註冊滑鼠移入事件
+        document.querySelector('img.toast').addEventListener('mousemove', function (event) {
+            this.setAttribute(
+                "src",
+                "./images/bread-6b.jpg"
+            );
+        });
+
+        document.querySelector('img.toast').addEventListener('mouseout', function (event) {
+            this.setAttribute(
+                "src",
+                "./images/bread-6.jpg"
+            );
+        });
+    </script>
+</body>
+
+</html>
