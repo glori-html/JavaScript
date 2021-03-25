@@ -2,7 +2,6 @@
  * 威力彩 遊戲介紹
  * https://www.taiwanlottery.com.tw/Superlotto638/index.asp
  */
-
 //取得亂數
 function getRandom(x) {
     /**
@@ -65,7 +64,7 @@ function getPowerNum() {
     //第二區號碼
     n = getRandom(8);
 
-    //因為威力彩有分兩區，第二區為 01 ~ 08 隨機一數字，所以我們在回傳時加上。
+    //因為威力彩有分兩區，第二區為 01 ~ 08 隨機一數字，所以我們在回傳時得加上。
     return `第一區號碼為： ${arr.join(",")}，第二區號碼為： ${n}`;
 }
 
